@@ -69,6 +69,10 @@ cd reachinbox-email-scheduler
 docker compose up -d
 ```
 
+> **Windows one-click option:** run `powershell -ExecutionPolicy Bypass -File .\start-dev.ps1`
+> to start Docker services, the backend (port 4000) and the frontend (5173) in separate
+> windows automatically.
+
 3. Setup backend:
 ```bash
 cd backend
