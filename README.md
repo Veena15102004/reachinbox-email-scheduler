@@ -5,7 +5,7 @@ Production-quality email scheduling application built with TypeScript, React, Ex
 
 ## Live Demo
 
-- **Live hosted project**: https://cigarette-effective-slope-levy.trycloudflare.com
+- **Live hosted project**: https://discusses-respected-focusing-mortgages.trycloudflare.com
 - **Demo video**: https://files.catbox.moe/6d4kmr.mp4
 
 ## Architecture
