@@ -6,10 +6,12 @@ import { config } from "./config";
 import { logger } from "./config/logger";
 import { initElasticsearch } from "./config/elasticsearch";
 import { startEmailWorker } from "./workers/emailWorker";
+import { runPreviewCleanupOnce } from "./workers/previewCleanup";
 
 async function main() {
   await initElasticsearch();
   startEmailWorker();
+  runPreviewCleanupOnce();
 
   app.listen(config.port, () => {
     logger.info("server", `started on port ${config.port}`);
