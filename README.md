@@ -3,6 +3,11 @@
 ## Overview
 Production-quality email scheduling application built with TypeScript, React, Express, PostgreSQL, Redis, BullMQ, and Elasticsearch.
 
+## Live Demo
+
+- **Live hosted project**: https://cigarette-effective-slope-levy.trycloudflare.com
+- **Demo video**: https://files.catbox.moe/6d4kmr.mp4
+
 ## Architecture
 
 ```
