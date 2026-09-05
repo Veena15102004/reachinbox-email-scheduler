@@ -161,7 +161,9 @@ export default function EmailTable({ type }: EmailTableProps) {
                 <td className="px-6 py-4">{statusBadge(email.status)}</td>
                 {type === "sent" && (
                   <td className="px-6 py-4">
-                    {email.previewUrl ? (
+                    {email.previewUrl &&
+                    email.sentAt &&
+                    Date.now() - new Date(email.sentAt).getTime() < 48 * 60 * 60 * 1000 ? (
                       <a
                         href={email.previewUrl}
                         target="_blank"
